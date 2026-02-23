@@ -45,6 +45,18 @@ BluesHouseDaisySittingText:
 	ld hl, GotMapText
 	call PrintText
 	SetEvent EVENT_GOT_TOWN_MAP
+
+	; Add Mew level 5
+	ld a, MEW
+	ld [wd11e], a
+	call GetMonName
+	ld a, 5
+	ld [wCurEnemyLVL], a
+	ld a, MEW
+	ld [wd11e], a
+	ld [wcf91], a
+	call AddPartyMon
+
 	jr .done
 
 .got_town_map
