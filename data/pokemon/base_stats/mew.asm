@@ -10,8 +10,8 @@
 	INCBIN "gfx/pokemon/front/mew.pic", 0, 1 ; sprite dimensions
 	dw MewPicFront, MewPicBack
 
-	db POUND, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 learnset
-	db GROWTH_MEDIUM_SLOW ; growth rate
+	db POUND, TRANSFORM, NO_MOVE, NO_MOVE ; level 1 learnset
+	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
 	tmhm MEGA_PUNCH,   RAZOR_WIND,   SWORDS_DANCE, FLAMETHROWER, MEGA_KICK,    \
