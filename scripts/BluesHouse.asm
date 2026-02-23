@@ -53,9 +53,20 @@ BluesHouseDaisySittingText:
 	ld a, 5
 	ld [wCurEnemyLVL], a
 	ld a, MEW
-	ld [wd11e], a
 	ld [wcf91], a
 	call AddPartyMon
+
+	; Now modify the DVs of that Pokémon
+	ld hl, wPartyMon1DVs
+	ld a, [wPartyCount]
+	dec a
+	ld bc, PARTYMON_STRUCT_LENGTH
+	call AddNTimes
+	ld a, $FF    ; ATK=15, DEF=15
+	ld [hl], a
+	inc hl
+	ld a, $FF    ; SPD=15, SPC=15
+	ld [hl], a
 
 	jr .done
 
