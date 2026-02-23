@@ -494,11 +494,12 @@ MewEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 10, TRANSFORM
-	db 15, CONFUSION
-	db 20, MEGA_PUNCH
+	db 10, CONFUSION
+	db 15, MIMIC
+	db 20, SWIFT
 	db 25, PSYBEAM
-	db 30, METRONOME
+	db 30, MEGA_PUNCH
+	db 35, METRONOME
 	db 40, PSYCHIC_M
 	db 0
 
