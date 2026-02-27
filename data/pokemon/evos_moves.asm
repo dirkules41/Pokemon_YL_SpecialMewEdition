@@ -495,12 +495,12 @@ MewEvosMoves:
 	db 0
 ; Learnset
 	db 10, CONFUSION
-	db 15, MIMIC
-	db 20, SWIFT
+	db 15, SWIFT
+	db 20, KINESIS
 	db 25, PSYBEAM
-	db 30, MEGA_PUNCH
-	db 35, METRONOME
+	db 30, NIGHT_SHADE
 	db 40, PSYCHIC_M
+	db 50, AMNESIA
 	db 0
 
 GyaradosEvosMoves:
