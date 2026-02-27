@@ -29,6 +29,10 @@ _OaksLabThatsAPokeball::
 _OaksLabOak1GoAheadItsYours::
 	text "OAK: Go ahead,"
 	line "it's yours!"
+	para "Oh, and take these"
+	line "REPELs with you!"
+	para "They'll keep weak"
+	line "#MON away from you."
 	done
 
 _OaksLabOak1YourPokemonCanFightText::
