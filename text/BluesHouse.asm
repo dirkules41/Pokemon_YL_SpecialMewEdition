@@ -9,6 +9,11 @@ _BluesHouseDaisyOfferMapText::
 	line "to run an errand?"
 	cont "Here, this will"
 	cont "help you!"
+	cont "Here is also an"
+	cont "extra #MON!"
+	cont "Don't tell my"
+	cont "brother that I"
+	cont "gave you this!"
 	prompt
 
 _GotMapText::
