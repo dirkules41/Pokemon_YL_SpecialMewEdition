@@ -296,6 +296,8 @@ OaksLabPlayerReceivesPikachuScript:
 	ld a, TEXT_OAKSLAB_PLAYER_RECEIVED_MON
 	ldh [hSpriteIndexOrTextID], a
 	call DisplayTextID
+	lb bc, REPEL, 99
+	call GiveItem
 	xor a
 	ld [wJoyIgnore], a
 
