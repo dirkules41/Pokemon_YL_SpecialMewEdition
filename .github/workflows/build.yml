@@ -19,11 +19,11 @@ jobs:
         sudo apt update
         sudo apt install -y build-essential git libpng-dev cmake
 
-    - name: 🔧 Build RGBDS v0.6.0 from source
+    - name: 🔧 Build RGBDS v0.6.1 from source
       run: |
         git clone https://github.com/gbdev/rgbds.git
         cd rgbds
-        git checkout v0.6.0
+        git checkout v0.6.1
         make
         sudo make install
         rgbasm -V  # Version anzeigen zur Sicherheit
