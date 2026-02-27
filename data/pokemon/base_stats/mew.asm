@@ -10,7 +10,7 @@
 	INCBIN "gfx/pokemon/front/mew.pic", 0, 1 ; sprite dimensions
 	dw MewPicFront, MewPicBack
 
-	db POUND, TRANSFORM, NO_MOVE, NO_MOVE ; level 1 learnset
+	db POUND, MIMIC, NO_MOVE, NO_MOVE ; level 1 learnset
 	db GROWTH_SLOW ; growth rate
 
 	; tm/hm learnset
